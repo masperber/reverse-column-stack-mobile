@@ -1,0 +1,25 @@
+/* Reverse Columns Block stack.
+* 781px is the default breakpoint for the Columns
+* Adjust break point as needed.
+*/
+@media (max-width:781px) {
+    .is-style-reverse-mobile {
+        flex-direction: column-reverse;     
+    }
+}
+
+/* Reverse Media & Text Block stack.
+* 600px is the default breakpoint for the Media & Text Block
+* Adjust break point as needed.
+*/
+@media (max-width:600px) {
+    .is-style-reverse-mobile.wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__media {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .is-style-reverse-mobile.wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__content {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
